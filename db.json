@@ -1,0 +1,234 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Manager of Teen and Intergenerational Programs",
+      "company": "Museum of Arts and Design (MAD)",
+      "location": "New York, NY",
+      "position": "Full-Time / Permanent",
+      "salary": "$66,300 per annum",
+      "schedule": "Tue - Sat, 9:30am–5:30pm",
+      "description": "The Museum of Arts and Design (MAD) seeks a Manager to join the Education department. This public-facing position is responsible for the development, planning, and production of inventive intergenerational programs.",
+      "responsibilities": [
+        "Planning and implementation of intergenerational programming",
+        "Daily management of MAD’s Project Space",
+        "Managing Artslife summer intensive programs",
+        "Budget management and attendance reporting"
+      ],
+      "requirements": [
+        "Minimum 3 years of experience in museum programming",
+        "Bachelor’s degree in Art History or related field",
+        "Knowledge of contemporary art and design",
+        "Ability to work on-site and occasional evenings"
+      ],
+      "apply_url": "https://madmuseum.org"
+    },
+    {
+      "id": 2,
+      "title": "Senior Frontend Developer",
+      "company": "TechStream Solutions",
+      "location": "Remote",
+      "position": "Full-Time",
+      "salary": "$130,000 - $150,000",
+      "schedule": "Mon - Fri, 9:00am–5:00pm EST",
+      "description": "We are looking for a Senior Frontend Developer to lead our UI team in building scalable web applications using React and Tailwind CSS.",
+      "responsibilities": [
+        "Develop and maintain complex user interfaces",
+        "Optimize applications for maximum speed",
+        "Mentor junior developers and conduct code reviews",
+        "Collaborate with UX designers to implement design systems"
+      ],
+      "requirements": [
+        "5+ years of experience with React.js",
+        "Proficiency in TypeScript and state management",
+        "Strong understanding of responsive design",
+        "Experience with CI/CD pipelines"
+      ],
+      "apply_url": "https://techstream.io"
+    },
+    {
+      "id": 3,
+      "title": "Clinical Research Coordinator",
+      "company": "City Health Hospital",
+      "location": "Chicago, IL",
+      "position": "Permanent",
+      "salary": "$72,000 per annum",
+      "schedule": "Mon - Fri, 8:00am–4:00pm",
+      "description": "Join our oncology department to coordinate clinical trials and manage patient data according to regulatory standards.",
+      "responsibilities": [
+        "Recruit and screen eligible trial participants",
+        "Maintain precise regulatory documentation",
+        "Coordinate patient visits and laboratory tests",
+        "Report adverse events to the Institutional Review Board"
+      ],
+      "requirements": [
+        "Bachelor's degree in Science or Healthcare",
+        "2 years of clinical trial experience",
+        "Certified Clinical Research Professional (CCRP) preferred",
+        "Strong attention to detail and ethics"
+      ],
+      "apply_url": "https://cityhealth.org"
+    },
+    {
+      "id": 4,
+      "title": "Sustainability Consultant",
+      "company": "EcoLogic Group",
+      "location": "Austin, TX",
+      "position": "Full-Time / Hybrid",
+      "salary": "$85,000 per annum",
+      "schedule": "Flexible Hours",
+      "description": "EcoLogic is seeking a consultant to help corporate clients reduce their carbon footprint and implement ESG strategies.",
+      "responsibilities": [
+        "Conduct carbon audits and energy assessments",
+        "Develop sustainability reports for stakeholders",
+        "Advise on renewable energy transitions",
+        "Liaise with environmental regulatory bodies"
+      ],
+      "requirements": [
+        "Master’s degree in Environmental Science or MBA",
+        "Knowledge of LEED and GRI reporting standards",
+        "Proven analytical and problem-solving skills",
+        "Excellent client presentation abilities"
+      ],
+      "apply_url": "https://ecologic.com"
+    },
+    {
+      "id": 5,
+      "title": "UX Content Strategist",
+      "company": "Global FinTech",
+      "location": "San Francisco, CA",
+      "position": "Full-Time",
+      "salary": "$115,000 per annum",
+      "schedule": "Mon - Fri, 10:00am–6:00pm",
+      "description": "Craft clear, concise, and helpful copy for our mobile banking app to improve user navigation and satisfaction.",
+      "responsibilities": [
+        "Design end-to-end content strategies",
+        "Write microcopy for UI components",
+        "Conduct readability and usability testing",
+        "Maintain the internal brand voice guide"
+      ],
+      "requirements": [
+        "4+ years of UX writing or content strategy experience",
+        "Portfolio of shipped digital products",
+        "Experience working in Figma and Jira",
+        "Background in English or Communications"
+      ],
+      "apply_url": "https://fintech.com"
+    },
+    {
+      "id": 6,
+      "title": "Lead Barista & Trainer",
+      "company": "Artisan Roast Co.",
+      "location": "Seattle, WA",
+      "position": "Full-Time",
+      "salary": "$45,000 + Tips",
+      "schedule": "Wed - Sun, 6:00am–2:00pm",
+      "description": "Manage our flagship cafe's bar operations and train new staff on brewing techniques and latte art.",
+      "responsibilities": [
+        "Oversee daily cafe operations and inventory",
+        "Maintain high standards of espresso quality",
+        "Train team members on menu items and service",
+        "Ensure health and safety compliance"
+      ],
+      "requirements": [
+        "3 years of specialty coffee experience",
+        "Previous supervisory or training experience",
+        "Deep knowledge of coffee origins and roasting",
+        "Strong customer service skills"
+      ],
+      "apply_url": "https://artisanroast.com"
+    },
+    {
+      "id": 7,
+      "title": "Warehouse Operations Manager",
+      "company": "LogiLink Logistics",
+      "location": "Atlanta, GA",
+      "position": "Permanent",
+      "salary": "$90,000 per annum",
+      "schedule": "Mon - Fri, 7:00am–4:00pm",
+      "description": "Direct and coordinate the daily activities of our distribution center to ensure efficient shipping and receiving.",
+      "responsibilities": [
+        "Manage a team of 50+ warehouse associates",
+        "Optimize floor layout and inventory workflows",
+        "Enforce strict OSHA safety standards",
+        "Analyze operational costs and budgets"
+      ],
+      "requirements": [
+        "Bachelor's degree in Supply Chain or Logistics",
+        "5 years of management experience in a fast-paced hub",
+        "Proficiency in WMS software",
+        "Ability to work in a non-climate controlled environment"
+      ],
+      "apply_url": "https://logilink.com"
+    },
+    {
+      "id": 8,
+      "title": "Digital Marketing Specialist",
+      "company": "Vivid Media Agency",
+      "location": "Remote",
+      "position": "Full-Time",
+      "salary": "$65,000 - $75,000",
+      "schedule": "Mon - Fri, 9:00am–5:00pm",
+      "description": "Drive growth for our e-commerce clients through targeted PPC campaigns and SEO optimization.",
+      "responsibilities": [
+        "Manage Google Ads and Meta Ads budgets",
+        "Perform keyword research and on-page SEO",
+        "Analyze campaign performance using GA4",
+        "Create monthly reports for client stakeholders"
+      ],
+      "requirements": [
+        "Google Ads Certification required",
+        "Experience managing monthly spends over $10k",
+        "Strong analytical and copywriting skills",
+        "Ability to manage multiple client accounts"
+      ],
+      "apply_url": "https://vividmedia.com"
+    },
+    {
+      "id": 9,
+      "title": "Museum Security Supervisor",
+      "company": "National History Museum",
+      "location": "Washington, D.C.",
+      "position": "Full-Time",
+      "salary": "$58,000 per annum",
+      "schedule": "Rotating Shifts (inc. weekends)",
+      "description": "Oversee the protection of museum assets, visitors, and staff through active monitoring and team leadership.",
+      "responsibilities": [
+        "Supervise daily security patrols and stationing",
+        "Conduct emergency response drills",
+        "Manage electronic surveillance systems",
+        "Liaise with local law enforcement"
+      ],
+      "requirements": [
+        "5 years of security or military experience",
+        "Clean background check and security license",
+        "Strong leadership and de-escalation skills",
+        "First Aid/CPR Certification"
+      ],
+      "apply_url": "https://nhm.gov"
+    },
+    {
+      "id": 10,
+      "title": "Junior Data Analyst",
+      "company": "Retail Pulse",
+      "location": "Boston, MA",
+      "position": "Entry-Level",
+      "salary": "$60,000 - $70,000",
+      "schedule": "Mon - Fri, 9:00am–5:30pm",
+      "description": "Support the marketing and sales teams by cleaning data and creating visual dashboards of consumer trends.",
+      "responsibilities": [
+        "Clean and validate sales data sets",
+        "Build dashboards in Tableau or PowerBI",
+        "Assist in preparing quarterly market reports",
+        "Automate repetitive data collection tasks"
+      ],
+      "requirements": [
+        "Bachelor's degree in Math, Statistics, or CS",
+        "Proficiency in SQL and Excel",
+        "Basic knowledge of Python or R",
+        "Strong curiosity for consumer behavior"
+      ],
+      "apply_url": "https://retailpulse.io"
+    }
+  ]
+}
