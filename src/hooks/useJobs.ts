@@ -48,11 +48,12 @@ export function useJobs() {
       try {
         setLoading(true);
         const res = await fetch("http://localhost:8000/jobs");
-        if (!res.ok) throw new Error("Failed to fetch jobs");
+        if (!res.ok) throw new Error("failed to fetch jobs");
         const data = await res.json();
         setJobs(data);
-      } catch (err: any) {
-        setError(err.message || "Something went wrong");
+      } catch (err) {
+        if (err instanceof Error)
+          setError(err.message || "something went wrong");
       } finally {
         setLoading(false);
       }
@@ -77,8 +78,10 @@ export function useJob(id: string | undefined) {
         if (!res.ok) throw new Error("Job not found");
         const data = await res.json();
         setJob(data);
-      } catch (err: any) {
-        setError(err.message || "Something went wrong");
+      } catch (err) {
+        if (err instanceof Error)
+          setError(err.message || "Something went wrong");
+          
       } finally {
         setLoading(false);
       }

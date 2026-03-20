@@ -10,10 +10,12 @@ const Jobs = () => {
 
   const { jobs, loading, error } = useJobs();
   console.log("jobs :>> ", jobs);
+
   const [searchParams, setSearchParams] = useSearchParams();
   const [query, setQuery] = useState(searchParams.get("q") || "");
   const [location, setLocation] = useState(searchParams.get("loc") || "");
 
+  
   const filtered = useMemo(() => {
     return jobs.filter((job) => {
       const matchTitle = job.title.toLowerCase().includes(query.toLowerCase());
@@ -26,9 +28,12 @@ const Jobs = () => {
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    const params = new URLSearchParams();
-    if (query.trim()) params.set("q", query.trim());
-    if (location.trim()) params.set("loc", location.trim());
+    // // const params = new URLSearchParams();
+    // if (query.trim()) params.set("q", query.trim());
+    // if (location.trim()) params.set("loc", location.trim());
+    let params = {};
+    if (query.trim()) params = { ...params, q: query.trim() };
+    if (location.trim()) params = { ...params, loc: location.trim() };
     setSearchParams(params);
   };
 

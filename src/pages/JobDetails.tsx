@@ -9,10 +9,19 @@ import {
   Loader2,
 } from "lucide-react";
 import { useJob } from "../hooks/useJobs";
-
+import { type Application } from "../types/type";
+import { useAuth } from "../context/AuthContext";
 export default function JobDetails() {
   const { id } = useParams();
   const { job, loading, error } = useJob(id);
+  const { isLogin } = useAuth();
+  const applications: Application[] = JSON.parse(
+    localStorage.getItem("applications") || "[]",
+  );
+
+  const isApplied = applications.some(
+    (j) => Number(j.jobId) == Number(job?.id),
+  );
 
   if (loading) {
     return (
@@ -134,12 +143,28 @@ export default function JobDetails() {
         )}
 
         {/* apply button */}
-        <Link
-          to={`/jobs/${job.id}/apply`}
-          className=" items-center bg-emerald-500  text-white dark:text-zinc-950 font-semibold py-2.5 px-6 rounded-xl text-sm "
-        >
-          Apply for this Position
-        </Link>
+        {!isApplied ? (
+          <Link
+            to={`/jobs/${job.id}/apply`}
+            className={` bg-emerald-500  text-white dark:text-zinc-950 font-semibold py-2.5 px-9 rounded-xl  items-center   text-sm ${isApplied ? "bg-emerald-600 " : "bg-emerald-500"}`}
+          >
+            {" "}
+            Apply
+          </Link>
+        ) : isLogin ? (
+          <div
+            className={`inline-block items-center bg-emerald-500  text-white dark:text-zinc-950 font-semibold py-2.5 px-6 rounded-xl text-sm ${isApplied ? "bg-emerald-700 " : "bg-emerald-500"}`}
+          >
+            You already apply for this job
+          </div>
+        ) : (
+          <Link
+            to={`/jobs/${job.id}/apply`}
+            className=" items-center bg-emerald-500  text-white dark:text-zinc-950 font-semibold py-2.5 px-6 rounded-xl text-sm "
+          >
+            Apply for this Position
+          </Link>
+        )}
       </div>
     </div>
   );

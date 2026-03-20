@@ -5,10 +5,7 @@ import { useAuth } from "../context/AuthContext";
 import { useTheme } from "../context/ThemeContext";
 import { Sun, Moon, Menu, X } from "lucide-react";
 
-const navigation = [
-  { name: "Jobs", href: "/jobs" },
-  { name: "Dashboard", href: "/dashboard" },
-];
+const navigation = [{ name: "Jobs", href: "/jobs" }];
 
 function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -60,7 +57,15 @@ function Header() {
               {item.name}
             </Link>
           ))}
-
+          {/* dashboard  */}
+          {isLogin && (
+            <Link
+              className="text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white "
+              to={"/dashboard"}
+            >
+              Dashboard
+            </Link>
+          )}
           {/* theme toggle */}
           <button
             onClick={ToggleTheme}
@@ -129,6 +134,15 @@ function Header() {
                 {item.name}
               </Link>
             ))}
+            {/* dashboard  */}
+            {isLogin && (
+              <Link
+                className="text-sm font-semibold text-zinc-600 dark:text-zinc-300 hover:text-zinc-900 dark:hover:text-white "
+                to={"/dashboard"}
+              >
+                Dashboard
+              </Link>
+            )}
             <button
               onClick={ToggleTheme}
               className="flex items-center gap-2 text-base font-semibold text-zinc-700 dark:text-zinc-200"

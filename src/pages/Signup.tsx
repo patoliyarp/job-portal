@@ -7,14 +7,14 @@ import toast from "react-hot-toast";
 const schema = yup.object().shape({
   username: yup
     .string()
-    .required("Username is required")
-    .min(2, "Minimum 2 characters")
-    .max(15, "Maximum 15 characters"),
-  email: yup.string().email("Invalid email").required("Email is required"),
+    .required("username is required")
+    .min(2, "minimum 2 characters")
+    .max(15, "maximum 15 characters"),
+  email: yup.string().email("invalid email").required("email is required"),
   password: yup
     .string()
-    .required("Password is required")
-    .min(6, "Minimum 6 characters"),
+    .required("password is required")
+    .min(6, "minimum 6 characters"),
 });
 
 interface ISignupForm {
@@ -33,7 +33,7 @@ function Signup() {
   } = useForm<ISignupForm>({ resolver: yupResolver(schema) });
 
   const onSubmit = (data: ISignupForm) => {
-    // Mock signup – store user list in localStorage
+    // store username and email in local storage for signup
     const users = JSON.parse(localStorage.getItem("users") || "[]");
     const exists = users.find((u: any) => u.email === data.email);
     if (exists) {

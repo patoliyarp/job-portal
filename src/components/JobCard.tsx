@@ -1,8 +1,19 @@
 import { Link } from "react-router-dom";
 import { Briefcase, MapPin, DollarSign, Calendar } from "lucide-react";
 import type { Job } from "../types/type";
+import { type Application } from "../types/type";
+import { useAuth } from "../context/AuthContext";
 
 const JobCard = ({ job }: { job: Job }) => {
+  const applications: Application[] = JSON.parse(
+    localStorage.getItem("applications") || "[]",
+  );
+
+  const isApplied = applications.some((j) => Number(j.jobId) == Number(job.id));
+  console.log("applications :>> ", isApplied);
+
+  const { isLogin } = useAuth();
+
   return (
     <div className="bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl p-6 shadow-sm dark:shadow-2xl">
       {/* header */}
@@ -48,12 +59,28 @@ const JobCard = ({ job }: { job: Job }) => {
         >
           View
         </Link>
-        <Link
-          to={`/jobs/${job.id}/apply`}
-          className="flex-1 bg-emerald-500  text-white dark:text-zinc-950 font-semibold py-2.5 px-4 rounded-xl flex items-center justify-center  text-sm "
-        >
-          Apply
-        </Link>
+
+        {!isApplied ? (
+          <Link
+            to={`/jobs/${job.id}/apply`}
+            className={`flex-1 bg-emerald-500  text-white dark:text-zinc-950 font-semibold py-2.5 px-4 rounded-xl flex items-center justify-center  text-sm ${isApplied ? "bg-emerald-600 " : "bg-emerald-500"}`}
+          >
+            Apply
+          </Link>
+        ) : isLogin ? (
+          <div
+            className={`flex-1 bg-emerald-500  text-white dark:text-zinc-950 font-semibold py-2.5 px-4 rounded-xl flex items-center justify-center  text-sm ${isApplied ? "bg-emerald-700 " : "bg-emerald-500"}`}
+          >
+            Applied
+          </div>
+        ) : (
+          <Link
+            to={`/jobs/${job.id}/apply`}
+            className={`flex-1 bg-emerald-500  text-white dark:text-zinc-950 font-semibold py-2.5 px-4 rounded-xl flex items-center justify-center  text-sm `}
+          >
+            Apply
+          </Link>
+        )}
       </div>
     </div>
   );
